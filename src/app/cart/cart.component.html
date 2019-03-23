@@ -1,0 +1,20 @@
+<body>
+  <h1>MyCart</h1>
+  <hr>
+  <div class="row" *ngFor="let item of data" >
+    <div class="col-md-4">
+      <a>
+        <img
+          class="img-responsive"
+          src="./assets/img{{ item.id }}.jpg"
+        />
+      </a>
+    </div>
+    <div class="col-m">
+        <h5>Name:{{item.name}}</h5>
+        <h5>Color:{{item.colour}}</h5>
+        <h5>Size:{{item.size}}</h5>
+        <h5>Price:{{item.cost}}</h5>
+    </div>
+  </div>
+</body>

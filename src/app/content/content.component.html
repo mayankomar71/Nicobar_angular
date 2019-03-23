@@ -1,0 +1,22 @@
+<body  class="col-md-9">
+  
+  <div class="row" >
+
+    <div class="col-md-4" *ngFor="let item of getProducts" >
+      <div class="maincontainer">
+        <div class="card">
+          <a>
+            <img class="img-responsive" src="./assets/img{{ item.id }}.jpg" (click)="gotoProductDetails(item)"/>
+          </a>
+        </div>
+        <div class="card-body">
+          <span class="card-title">{{item.name}}</span>
+          <div class="card-price">
+            <span>₹ {{item.cost}}</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

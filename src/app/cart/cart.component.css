@@ -1,0 +1,9 @@
+.row1{
+    height: 200px;
+    
+}
+@media (min-width: 992px){
+.col-md-4 {
+    width: 9.333333%;
+}
+}

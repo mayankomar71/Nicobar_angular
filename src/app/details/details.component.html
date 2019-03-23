@@ -1,0 +1,43 @@
+<body>
+  <div class="row_details">
+   
+    <div class="col-md-8">
+      <div class="resultGiftBox">
+        <div class="row" >
+            <div class="col-md-6">
+                <a>
+                    <img
+                      class="img-responsive"
+                      src="./assets/img{{ product_obj.id }}.jpg"
+                    />
+                  </a>
+            </div>
+           
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="detail_container" >
+        <div class="row2">
+            <h1>{{product_obj.name}}</h1>
+       
+            <h4>₹  {{product_obj.cost }}</h4>
+            <label>color : {{product_obj.colour}}</label>  
+            
+            <hr>
+            <label>Sizes:{{product_obj.size}} </label>   
+            <div class="addtocart" (click)="opencomp(product_obj)">
+                <h5>Add to cart</h5>
+            </div>   
+        </div>
+        
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+<router-outlet></router-outlet>

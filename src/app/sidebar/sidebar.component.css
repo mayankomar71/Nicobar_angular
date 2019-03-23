@@ -1,0 +1,24 @@
+body{
+   
+    margin-top: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.side_data{
+    color: black;
+    margin-left: 16.66666667%;
+   
+}
+@media (min-width: 1200px){
+.container {
+    width: 100%;
+}
+}
+.coldiv{
+    margin-left: 20px;
+    cursor: pointer;
+}
+@media (min-width: 992px){
+.col-md-3 {
+    width: 22%;
+}
+}
